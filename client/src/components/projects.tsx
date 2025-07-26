@@ -42,8 +42,8 @@ export default function Projects() {
 
   return (
     <section className="print-break">
-      <h2 className="text-2xl font-semibold text-google-gray-900 mb-6 flex items-center gap-2">
-        <Folder className="h-6 w-6 text-google-green" />
+      <h2 className="text-2xl font-semibold text-google-gray-900 dark:text-google-gray-800 mb-6 flex items-center gap-2">
+        <Folder className="h-6 w-6 text-google-green dark:text-google-green" />
         Projects
       </h2>
       
@@ -51,13 +51,13 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div 
             key={index}
-            className={`bg-white rounded-lg shadow-material p-4 border-l-4 border-${project.color} hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1`}
+            className={`bg-white dark:bg-google-gray-100 rounded-lg shadow-material p-4 border-l-4 border-${project.color} hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1`}
           >
-            <h4 className="font-semibold text-google-gray-900 mb-2 flex items-center gap-2">
+            <h4 className="font-semibold text-google-gray-900 dark:text-google-gray-800 mb-2 flex items-center gap-2">
               <project.icon className={`h-4 w-4 text-${project.color}`} />
               {project.title}
             </h4>
-            <p className="text-sm text-google-gray-600">
+            <p className="text-sm text-google-gray-600 dark:text-google-gray-500">
               {project.description}
             </p>
           </div>

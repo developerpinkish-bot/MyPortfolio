@@ -30,8 +30,8 @@ export default function WorkExperience() {
 
   return (
     <section className="print-break">
-      <h2 className="text-3xl font-semibold text-google-gray-900 mb-8 flex items-center gap-3">
-        <Briefcase className="h-8 w-8 text-google-green" />
+      <h2 className="text-3xl font-semibold text-google-gray-900 dark:text-google-gray-800 mb-8 flex items-center gap-3">
+        <Briefcase className="h-8 w-8 text-google-green dark:text-google-green" />
         Work Experience
       </h2>
       
@@ -39,14 +39,14 @@ export default function WorkExperience() {
         {experiences.map((experience, index) => (
           <div 
             key={index}
-            className={`bg-white rounded-xl shadow-material p-6 border-l-4 border-${experience.color} hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1`}
+            className={`bg-white dark:bg-google-gray-100 rounded-xl shadow-material p-6 border-l-4 border-${experience.color} hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1`}
           >
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
               <div>
-                <h3 className="text-xl font-semibold text-google-gray-900">
+                <h3 className="text-xl font-semibold text-google-gray-900 dark:text-google-gray-800">
                   {experience.title}
                 </h3>
-                <p className="text-google-blue font-medium">
+                <p className="text-google-blue dark:text-google-blue font-medium">
                   {experience.company}
                 </p>
               </div>
@@ -54,7 +54,7 @@ export default function WorkExperience() {
                 {experience.period}
               </span>
             </div>
-            <ul className="space-y-2 text-google-gray-700">
+            <ul className="space-y-2 text-google-gray-700 dark:text-google-gray-600">
               {experience.achievements.map((achievement, achievementIndex) => (
                 <li key={achievementIndex} className="flex items-start gap-3">
                   <experience.icon className={`h-4 w-4 text-${experience.color} mt-1 flex-shrink-0`} />

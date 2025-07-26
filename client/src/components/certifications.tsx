@@ -18,8 +18,8 @@ export default function Certifications() {
 
   return (
     <section className="print-break">
-      <h2 className="text-2xl font-semibold text-google-gray-900 mb-6 flex items-center gap-2">
-        <Award className="h-6 w-6 text-google-yellow" />
+      <h2 className="text-2xl font-semibold text-google-gray-900 dark:text-google-gray-800 mb-6 flex items-center gap-2">
+        <Award className="h-6 w-6 text-google-yellow dark:text-google-yellow" />
         Certifications
       </h2>
       
@@ -27,15 +27,15 @@ export default function Certifications() {
         {certifications.map((cert, index) => (
           <div 
             key={index}
-            className="bg-white rounded-lg shadow-material p-4 border border-google-gray-200 hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1"
+            className="bg-white dark:bg-google-gray-100 rounded-lg shadow-material p-4 border border-google-gray-200 dark:border-google-gray-300 hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1"
           >
             <div className="flex items-center gap-3">
               <cert.icon className={`h-6 w-6 text-${cert.color}`} />
               <div>
-                <h4 className="font-semibold text-google-gray-900">
+                <h4 className="font-semibold text-google-gray-900 dark:text-google-gray-800">
                   {cert.title}
                 </h4>
-                <p className="text-sm text-google-gray-600">
+                <p className="text-sm text-google-gray-600 dark:text-google-gray-500">
                   {cert.provider}
                 </p>
               </div>

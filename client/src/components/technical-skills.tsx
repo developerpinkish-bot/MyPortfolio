@@ -32,16 +32,16 @@ export default function TechnicalSkills() {
 
   return (
     <section className="print-break">
-      <h2 className="text-2xl font-semibold text-google-gray-900 mb-6 flex items-center gap-2">
-        <Code className="h-6 w-6 text-google-blue" />
+      <h2 className="text-2xl font-semibold text-google-gray-900 dark:text-google-gray-800 mb-6 flex items-center gap-2">
+        <Code className="h-6 w-6 text-google-blue dark:text-google-blue" />
         Technical Skills
       </h2>
       
-      <div className="bg-white rounded-xl shadow-material p-6 hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1">
+      <div className="bg-white dark:bg-google-gray-100 rounded-xl shadow-material p-6 hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1">
         <div className="space-y-6">
           {skillCategories.map((category, index) => (
             <div key={index}>
-              <h4 className="font-semibold text-google-gray-800 mb-3">
+              <h4 className="font-semibold text-google-gray-800 dark:text-google-gray-700 mb-3">
                 {category.title}
               </h4>
               <div className="flex flex-wrap gap-2">
@@ -58,24 +58,24 @@ export default function TechnicalSkills() {
           ))}
           
           <div>
-            <h4 className="font-semibold text-google-gray-800 mb-3">Technologies & Frameworks</h4>
+            <h4 className="font-semibold text-google-gray-800 dark:text-google-gray-700 mb-3">Technologies & Frameworks</h4>
             <div className="space-y-2">
               {technologies.map((tech, index) => (
-                <div key={index} className="flex items-center gap-3 hover:bg-google-gray-50 p-2 rounded-lg transition-colors">
+                <div key={index} className="flex items-center gap-3 hover:bg-google-gray-50 dark:hover:bg-google-gray-200 p-2 rounded-lg transition-colors">
                   <tech.icon className={`h-4 w-4 text-${tech.color}`} />
-                  <span className="text-sm">{tech.name}</span>
+                  <span className="text-sm text-google-gray-700 dark:text-google-gray-600">{tech.name}</span>
                 </div>
               ))}
             </div>
           </div>
           
           <div>
-            <h4 className="font-semibold text-google-gray-800 mb-3">Soft Skills</h4>
+            <h4 className="font-semibold text-google-gray-800 dark:text-google-gray-700 mb-3">Soft Skills</h4>
             <div className="space-y-2">
               {softSkills.map((skill, index) => (
-                <div key={index} className="flex items-center gap-3 hover:bg-google-gray-50 p-2 rounded-lg transition-colors">
+                <div key={index} className="flex items-center gap-3 hover:bg-google-gray-50 dark:hover:bg-google-gray-200 p-2 rounded-lg transition-colors">
                   <skill.icon className={`h-4 w-4 text-${skill.color}`} />
-                  <span className="text-sm">{skill.name}</span>
+                  <span className="text-sm text-google-gray-700 dark:text-google-gray-600">{skill.name}</span>
                 </div>
               ))}
             </div>

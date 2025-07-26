@@ -6,10 +6,16 @@ import TechnicalSkills from "@/components/technical-skills";
 import Projects from "@/components/projects";
 import Certifications from "@/components/certifications";
 import CVFooter from "@/components/cv-footer";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function CVTemplate() {
   return (
-    <div className="font-google bg-white text-google-gray-900 leading-relaxed min-h-screen">
+    <div className="font-google bg-white dark:bg-google-gray-50 text-google-gray-900 dark:text-google-gray-900 leading-relaxed min-h-screen transition-colors duration-200">
+      {/* Theme Toggle - Fixed position for print-free */}
+      <div className="fixed top-4 right-4 z-50 no-print">
+        <ThemeToggle />
+      </div>
+      
       <CVHeader />
       
       <main className="max-w-6xl mx-auto px-8 py-12">

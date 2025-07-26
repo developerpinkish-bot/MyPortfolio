@@ -24,7 +24,7 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   
-  /* Google Material Design Colors */
+  /* Google Material Design Colors - Light Mode */
   --google-blue: hsl(217, 89%, 61%);
   --google-red: hsl(4, 90%, 58%);
   --google-yellow: hsl(45, 100%, 51%);
@@ -42,26 +42,42 @@
 }
 
 .dark {
-  --background: hsl(240, 10%, 3.9%);
+  --background: hsl(210, 11%, 15%);
   --foreground: hsl(0, 0%, 98%);
-  --muted: hsl(240, 3.7%, 15.9%);
-  --muted-foreground: hsl(240, 5%, 64.9%);
-  --popover: hsl(240, 10%, 3.9%);
+  --muted: hsl(210, 9%, 20%);
+  --muted-foreground: hsl(210, 5%, 60%);
+  --popover: hsl(210, 11%, 15%);
   --popover-foreground: hsl(0, 0%, 98%);
-  --card: hsl(240, 10%, 3.9%);
+  --card: hsl(210, 11%, 15%);
   --card-foreground: hsl(0, 0%, 98%);
-  --border: hsl(240, 3.7%, 15.9%);
-  --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(207, 90%, 54%);
+  --border: hsl(210, 9%, 25%);
+  --input: hsl(210, 9%, 25%);
+  --primary: hsl(217, 89%, 61%);
   --primary-foreground: hsl(211, 100%, 99%);
-  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary: hsl(210, 9%, 20%);
   --secondary-foreground: hsl(0, 0%, 98%);
-  --accent: hsl(240, 3.7%, 15.9%);
+  --accent: hsl(210, 9%, 20%);
   --accent-foreground: hsl(0, 0%, 98%);
-  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive: hsl(4, 90%, 58%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --ring: hsl(240, 4.9%, 83.9%);
+  --ring: hsl(210, 5%, 60%);
   --radius: 0.5rem;
+  
+  /* Google Material Design Colors - Dark Mode */
+  --google-blue: hsl(207, 90%, 72%);
+  --google-red: hsl(4, 90%, 68%);
+  --google-yellow: hsl(45, 100%, 61%);
+  --google-green: hsl(122, 39%, 59%);
+  --google-gray-50: hsl(210, 11%, 15%);
+  --google-gray-100: hsl(210, 9%, 20%);
+  --google-gray-200: hsl(210, 9%, 25%);
+  --google-gray-300: hsl(210, 9%, 35%);
+  --google-gray-400: hsl(210, 5%, 45%);
+  --google-gray-500: hsl(210, 5%, 55%);
+  --google-gray-600: hsl(210, 5%, 65%);
+  --google-gray-700: hsl(210, 5%, 75%);
+  --google-gray-800: hsl(210, 5%, 85%);
+  --google-gray-900: hsl(0, 0%, 98%);
 }
 
 @layer base {
