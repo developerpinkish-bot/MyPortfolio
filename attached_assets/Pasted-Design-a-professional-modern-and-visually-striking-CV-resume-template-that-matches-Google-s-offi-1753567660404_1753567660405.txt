@@ -1,0 +1,120 @@
+Design a professional, modern, and visually striking CV (resume) template that matches Google's official design language and user interface standards. This CV should reflect Google's Material Design principles and branding while maintaining clarity, functionality, and a tech-savvy appeal. The final layout must look like something a top tech company (e.g., Google, DeepMind, OpenAI) would expect from a young professional applying for AI and Cybersecurity roles.
+
+🧩 Design Specifications
+Aesthetic Style:
+Based on Google’s Material Design — flat elements, clean edges, bold typefaces, and intuitive layout.
+
+Color Scheme:
+Use subtle hints of Google’s signature color palette (blue, red, yellow, green) for accents only (icons, section titles, small dividers, bullets) to maintain a minimal and professional look.
+
+Typography:
+Use sans-serif fonts such as Google Sans, Roboto, or Open Sans, with clear visual hierarchy (e.g., larger bold name header, slightly smaller section headers, readable body text).
+
+Layout & Structure:
+
+Full-width header section with name and contact links
+
+2-column layout below: Left (primary content), Right (skills, projects, certificates)
+
+Plenty of white space for readability
+
+Visual balance across all sections
+
+Light lines or shaded blocks to separate sections subtly
+
+Icons can be used sparingly for contact info and skills
+
+Output Ready:
+The template should be fully printable (PDF) and also digital-view optimized (for websites or ATS systems).
+
+📌 Content to Use in the Template
+🔷 Header Section:
+Full Name: Humna Imran
+
+Title: Artificial Intelligence | Cybersecurity
+
+Location: Faisalabad, Pakistan
+
+Email: devhamnah@gmail.com
+
+LinkedIn: linkedin.com/in/hamnaic
+
+GitHub: github.com/hamnasz
+
+🔷 Professional Summary (Intro Paragraph):
+A passionate and detail-oriented BS Artificial Intelligence student with dual interests in AI and Cybersecurity. Google-certified Ethical Hacker with hands-on experience in NLP and penetration testing. Skilled in developing real-world tech solutions, with a strong foundation in programming, systems thinking, and ethical problem-solving.
+
+🔷 Work Experience:
+🔹 NLP Intern
+Elevvo Tech — (Present)
+
+Built and fine-tuned NLP models for real-world text classification tasks
+
+Preprocessed large text corpora using NLTK and spaCy
+
+Collaborated with senior data scientists for model optimization and evaluation
+
+🔹 Cybersecurity Intern
+CodeAlpha — (Present)
+
+Performed vulnerability assessments and basic penetration testing
+
+Worked with Linux-based security tools and simulated attack environments
+
+Gained experience in firewall configuration, intrusion detection, and ethical hacking best practices
+
+🔷 Education:
+Bachelor of Science in Artificial Intelligence
+The University of Faisalabad — 2023 – 2027
+
+Vice President, Girls Representative
+
+Led technical meetups and workshops for women in STEM
+
+Courses: AI, Machine Learning, Cybersecurity, Data Structures, Operating Systems
+
+🔷 Technical Skills:
+Programming Languages: C++, Python
+Platforms & Tools: Linux, GitHub, Jupyter, Wireshark
+Technologies & Frameworks:
+
+Machine Learning
+
+Deep Learning
+
+Natural Language Processing (NLP)
+
+Network Security & Penetration Testing
+
+Data Analysis & Visualization
+
+Ethical Hacking (Google Certified)
+
+Communication & Team Leadership
+
+Problem Solving
+
+(Optional: Present these skills with badges, bars, or icons for visual engagement.)
+
+🔷 Projects: (Add icons or thumbnails optionally)
+AI Resume Builder: A tool that creates smart resumes using GPT-based suggestions
+
+Network Packet Sniffer: Monitored and analyzed network traffic using Python and Scapy
+
+Online Exam LMS: A secure, automated examination system for academic institutions
+
+Language Learning App: AI-powered mobile app for personalized vocabulary practice
+
+Credit Scoring App: Built a scoring model using AI for micro-finance decisions
+
+Cognitive Bot: A chatbot that adapts responses based on user sentiment and behavior
+
+🔷 Certifications:
+Google Cybersecurity Professional Certificate
+
+Google Digital Marketing Certificate
+
+(Logos can be placed beside these for authenticity)
+
+🔷 Footer Section (Optional):
+Include a subtle line with a personal tech motto or quote (e.g., “Securing the future through AI and ethics.”), or quick-access icons to LinkedIn, GitHub, and email.
