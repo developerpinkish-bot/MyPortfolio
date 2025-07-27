@@ -1,0 +1,71 @@
+Light Mode Accent Colors
+In light mode, accent colors are typically more saturated and vibrant to stand out against light backgrounds (often #FFFFFF or very light grays). Google's core brand colors are frequently used for primary accents.
+
+Google's Core Brand Colors (often used as primary accents):
+
+Blue: #4285F4
+
+Red: #DB4437
+
+Yellow: #F4B400
+
+Green: #0F9D58
+
+Material Design Standard Color Palette (500-level shades are common for accents):
+Material Design provides a wide range of colors, each with 10 shades (50-900) and often accent (A100-A700) variants. The "500" shade of a color is typically considered the primary shade for light themes.
+
+Example Blues:
+
+Blue 500: #2196F3
+
+Blue A400 (a common accent): #2979FF
+
+Example Greens:
+
+Green 500: #4CAF50
+
+Green A700 (a common accent): #00C853
+
+Example Reds:
+
+Red 500: #F44336
+
+Red A400 (a common accent): #FF1744
+
+Example Yellows:
+
+Yellow 500: #FFEB3B
+
+Yellow A700 (a common accent): #FFD600
+
+You can explore the full Material Design color palette on their documentation (e.g., Material Design 2 or 3 color systems) to see all the variations.
+
+Dark Mode Accent Colors
+In dark mode, the primary surfaces are dark (often a deep gray like #121212 for Material Design 2, or slightly lighter for Material Design 3). Accent colors in dark mode are typically lighter and often less saturated than their light mode counterparts to ensure good contrast and prevent eye strain or "vibrating" effects.
+
+Material Design recommends using lighter tones from the palette (e.g., 200-50 shades) for accents in dark themes.
+
+Common Dark Mode Surface Color:
+
+Background/Surface: #121212 (Material Design 2 baseline dark theme)
+
+Examples of Lighter Accent Tones for Dark Mode:
+
+If your brand primary color in light mode is Blue 500 (#2196F3), in dark mode, you might use a lighter shade like:
+
+Blue 200: #90CAF9
+
+Blue 100: #BBDEFB
+
+For red, instead of Red 500 (#F44336), you might use:
+
+Red 200: #EF9A9A
+
+Red 100: #FFCDD2
+
+Material Design 3 (Material You) Approach:
+With Material You, accent colors are often derived algorithmically from the user's wallpaper. This means the hex codes are not fixed. However, the principle remains the same:
+
+Light Theme: Uses more vibrant/saturated tones.
+
+Dark Theme: Uses desaturated and lighter tones of the generated colors to maintain accessibility and visual comfort against dark backgrounds.
