@@ -13,31 +13,29 @@ import {
 export default function Certifications() {
   const certifications = [
     // Microsoft
-    { title: "Introduction to Computers and Operating Systems and Security", provider: "Microsoft", icon: Cpu },
-    { title: "Microsoft Cybersecurity Certificate", provider: "Microsoft", icon: Shield },
-    { title: "Cybersecurity Identity and Access Solutions using Azure AD", provider: "Microsoft", icon: Lock },
-    { title: "Cybersecurity Solutions and Microsoft Defender", provider: "Microsoft", icon: Shield },
-    { title: "Cybersecurity Threat Vectors and Mitigation", provider: "Microsoft", icon:Server },
-    { title: "Cybersecurity Tools and Technologies", provider: "Microsoft", icon: Cpu },
+    { title: "Introduction to Computers and Operating Systems and Security", provider: "Microsoft", icon: Cpu, url: "client/public/certificates/Microsoft Certificate 1.pdf" },
+    { title: "Microsoft Cybersecurity Certificate", provider: "Microsoft", icon: Shield, },
+    { title: "Cybersecurity Identity and Access Solutions using Azure AD", provider: "Microsoft", icon: Lock, url: "client/public/certificates/Microsoft Certificate 4.pdf" },
+    { title: "Cybersecurity Solutions and Microsoft Defender", provider: "Microsoft", icon: Shield, url: "client/public/certificates/Microsoft Certificate 5.pdf" },
+    { title: "Cybersecurity Threat Vectors and Mitigation", provider: "Microsoft", icon:Server, url: "client/public/certificates/Microsoft Certificate 3.pdf" },
+    { title: "Cybersecurity Tools and Technologies", provider: "Microsoft", icon: Cpu, url: "client/public/certificates/Microsoft Certificate 6.pdf" },
     { title: "Microsoft Cybersecurity Professional Certification 1", provider: "Microsoft", icon: BookText },
-    { title: "Introduction to Networking and Cloud Computing", provider: "Microsoft", icon: Globe },
+    { title: "Introduction to Networking and Cloud Computing", provider: "Microsoft", icon: Globe, url: "client/public/certificates/Microsoft Certificate 2.pdf" },
 
     // Google
-    { title: "Accelerate Your Job Search with AI", provider: "Google", icon: Megaphone },
-    { title: "Google Cybersecurity Certificate", provider: "Google", icon: Shield },
-    { title: "Assets, Threats, and Vulnerabilities", provider: "Google", icon: Lock },
-    { title: "Automate Cybersecurity Tasks with Python", provider: "Google", icon: Cpu },
-    { title: "Connect and Protect – Networks and Network Security", provider: "Google", icon: Server },
-    { title: "Play It Safe: Manage Security Risks", provider: "Google", icon: Shield },
-    { title: "Put It to Work: Prepare for Cybersecurity Jobs", provider: "Google", icon: Megaphone },
-    { title: "Sound the Alarm: Detection and Response", provider: "Google", icon: CloudLightning },
-    { title: "Tools of the Trade: Linux and SQL", provider: "Google", icon: Cpu },
-    { title: "Foundations of Cybersecurity", provider: "Google", icon: BookText },
-    { title: "Google Cybersecurity Professional Certificate", provider: "Google", icon: Shield },
+    { title: "Accelerate Your Job Search with AI", provider: "Google", icon: Megaphone, url:"client/public/certificates/Google Certificate Course 4.pdf" },
+    { title: "Google Cybersecurity Professional Certificate", provider: "Google", icon: Shield, url:"client/public/certificates/Google CyberSecurity.pdf" },
+    { title: "Assets, Threats, and Vulnerabilities", provider: "Google", icon: Lock, url:"client/public/certificates/Google Certificate Course 8.pdf" },
+    { title: "Automate Cybersecurity Tasks with Python", provider: "Google", icon: Cpu, url:"client/public/certificates/Google Certificate Course 6.pdf" },
+    { title: "Connect and Protect – Networks and Network Security", provider: "Google", icon: Server, url:"client/public/certificates/Google Certificate Course 3.pdf" },
+    { title: "Play It Safe: Manage Security Risks", provider: "Google", icon: Shield, url:"client/public/certificates/Google Certificate Course 2.pdf" },
+    { title: "Put It to Work: Prepare for Cybersecurity Jobs", provider: "Google", icon: Megaphone, url:"client/public/certificates/Google Certificate Course 5.pdf" },
+    { title: "Sound the Alarm: Detection and Response", provider: "Google", icon: CloudLightning,url:"client/public/certificates/Google Certificate Course 7.pdf" },
+    { title: "Tools of the Trade: Linux and SQL", provider: "Google", icon: Cpu, url:"client/public/certificates/Google Certificate Course 9.pdf" },
+    { title: "Foundations of Cybersecurity", provider: "Google", icon: BookText, url: "client/public/certificates/Google Certificate.pdf" },
 
     // IBM
-    { title: "Ethical Hacking with Kali Linux", provider: "IBM", icon: Lock },
-    { title: "IBM Cybersecurity Certificate", provider: "IBM", icon: Shield },
+    { title: "Ethical Hacking with Kali Linux", provider: "IBM", icon: Lock,url:"client/public/certificates/IBM Certificate 3.pdf" },
 
     // Others
     { title: "Digital Marketing Certificate", provider: "WAPEXP College", icon: Megaphone }
