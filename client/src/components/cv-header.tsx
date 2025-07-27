@@ -9,36 +9,48 @@ export default function CVHeader() {
           <h1 className="text-5xl lg:text-6xl font-bold mb-3 tracking-tight">
             Humna Imran
           </h1>
+
+          {/* AI & Cybersecurity in black both modes */}
           <p className="text-xl lg:text-2xl font-light mb-6 opacity-90">
-            Artificial Intelligence | Cybersecurity
+            <span className="text-black dark:text-white">Artificial Intelligence</span> |{" "}
+            <span className="text-black dark:text-white">Cybersecurity</span>
           </p>
-          
+
+          {/* Links with white font & colored backgrounds */}
           <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm lg:text-base">
-            <div className="flex items-center gap-2 bg-white bg-opacity-10 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-opacity-20 transition-all">
+
+            {/* Location - green bg */}
+            <div className="flex items-center gap-2 text-white bg-green-600 dark:bg-green-700 rounded-full px-4 py-2 hover:bg-green-700 dark:hover:bg-green-800 transition-all">
               <MapPin className="h-4 w-4" />
               <span>Faisalabad, Pakistan</span>
             </div>
-            <a 
-              href="mailto:devhamnah@gmail.com" 
-              className="flex items-center gap-2 bg-white bg-opacity-10 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-opacity-20 transition-all hover:underline"
+
+            {/* Email - yellow bg */}
+            <a
+              href="mailto:devhamnah@gmail.com"
+              className="flex items-center gap-2 text-white bg-yellow-500 dark:bg-yellow-600 rounded-full px-4 py-2 hover:bg-yellow-600 dark:hover:bg-yellow-700 transition-all hover:underline"
             >
               <Mail className="h-4 w-4" />
               <span>devhamnah@gmail.com</span>
             </a>
-            <a 
-              href="https://linkedin.com/in/hamnaic" 
-              target="_blank" 
+
+            {/* LinkedIn - blue bg */}
+            <a
+              href="https://linkedin.com/in/hamnaic"
+              target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-white bg-opacity-10 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-opacity-20 transition-all hover:underline"
+              className="flex items-center gap-2 text-white bg-blue-600 dark:bg-blue-700 rounded-full px-4 py-2 hover:bg-blue-700 dark:hover:bg-blue-800 transition-all hover:underline"
             >
               <Linkedin className="h-4 w-4" />
               <span>linkedin.com/in/hamnaic</span>
             </a>
-            <a 
-              href="https://github.com/hamnasz" 
-              target="_blank" 
+
+            {/* GitHub - red bg */}
+            <a
+              href="https://github.com/hamnasz"
+              target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-white bg-opacity-10 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-opacity-20 transition-all hover:underline"
+              className="flex items-center gap-2 text-white bg-red-600 dark:bg-red-700 rounded-full px-4 py-2 hover:bg-red-700 dark:hover:bg-red-800 transition-all hover:underline"
             >
               <Github className="h-4 w-4" />
               <span>github.com/hamnasz</span>

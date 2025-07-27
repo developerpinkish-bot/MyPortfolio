@@ -1,10 +1,24 @@
-import { Briefcase, CheckCircle, Shield } from "lucide-react";
+import { Briefcase, CheckCircle, Shield, Brain } from "lucide-react";
 
 export default function WorkExperience() {
   const experiences = [
     {
-      title: "NLP Intern",
+      title: "Machine Learning Intern",
+      company: "CodeAlpha",
+      companyColor: "text-google-red",
+      period: "Present",
+      color: "google-red",
+      icon: Brain,
+      achievements: [
+        "Implemented supervised learning models using Scikit-learn and Pandas",
+        "Worked on real-world datasets for regression and classification tasks",
+        "Gained experience in model evaluation, feature engineering, and optimization"
+      ]
+    },
+    {
+      title: "Natural Language Processing Intern",
       company: "Elevvo Tech",
+      companyColor: "text-google-green",
       period: "Present",
       color: "google-green",
       icon: CheckCircle,
@@ -17,8 +31,9 @@ export default function WorkExperience() {
     {
       title: "Cybersecurity Intern",
       company: "CodeAlpha",
+      companyColor: "text-google-blue",
       period: "Present",
-      color: "google-blue", // changed from "google-red" to blue
+      color: "google-blue",
       icon: Shield,
       achievements: [
         "Performed vulnerability assessments and basic penetration testing",
@@ -28,19 +43,21 @@ export default function WorkExperience() {
     }
   ];
 
-  // Mapping Tailwind classes
   const colorClasses = {
     "google-green": {
       bg: "bg-google-green",
-      text: "text-google-green"
+      text: "text-google-green",
+      border: "border-google-green"
     },
     "google-red": {
       bg: "bg-google-red",
-      text: "text-google-red"
+      text: "text-google-red",
+      border: "border-google-red"
     },
     "google-blue": {
       bg: "bg-google-blue",
-      text: "text-google-blue"
+      text: "text-google-blue",
+      border: "border-google-blue"
     }
   };
 
@@ -56,7 +73,7 @@ export default function WorkExperience() {
           <div
             key={index}
             className={`bg-white dark:bg-google-gray-100 rounded-xl shadow-material p-6 border-l-4 ${
-              colorClasses[experience.color]?.border || `border-${experience.color}`
+              colorClasses[experience.color]?.border
             } hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1`}
           >
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
@@ -64,7 +81,7 @@ export default function WorkExperience() {
                 <h3 className="text-xl font-semibold text-google-gray-900 dark:text-google-gray-800">
                   {experience.title}
                 </h3>
-                <p className="text-google-blue dark:text-google-blue font-medium">
+                <p className={`${experience.companyColor} font-medium`}>
                   {experience.company}
                 </p>
               </div>
