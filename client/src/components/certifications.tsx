@@ -57,11 +57,8 @@ export default function Certifications() {
       </h2>
 
       <div className="space-y-4">
-        {certifications.map((cert, index) => (
-          <div
-            key={index}
-            className="bg-white dark:bg-google-gray-100 rounded-lg shadow-material p-4 border border-google-gray-200 dark:border-google-gray-300 hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1"
-          >
+        {certifications.map((cert, index) => {
+          const CertificationContent = (
             <div className="flex items-center gap-3">
               <cert.icon className={`h-6 w-6 ${colorClasses[cert.provider] || "text-google-yellow"}`} />
               <div>
@@ -73,8 +70,27 @@ export default function Certifications() {
                 </p>
               </div>
             </div>
-          </div>
-        ))}
+          );
+
+          return cert.url ? (
+            <a
+              key={index}
+              href={cert.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white dark:bg-google-gray-100 rounded-lg shadow-material p-4 border border-google-gray-200 dark:border-google-gray-300 hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1 cursor-pointer"
+            >
+              {CertificationContent}
+            </a>
+          ) : (
+            <div
+              key={index}
+              className="bg-white dark:bg-google-gray-100 rounded-lg shadow-material p-4 border border-google-gray-200 dark:border-google-gray-300 hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1"
+            >
+              {CertificationContent}
+            </div>
+          );
+        })}
       </div>
     </section>
   );
