@@ -25,10 +25,10 @@
   --radius: 0.5rem;
   
   /* Google Material Design Colors - Light Mode */
-  --google-blue: hsl(217, 89%, 61%);
-  --google-red: hsl(4, 90%, 58%);
-  --google-yellow: hsl(45, 100%, 51%);
-  --google-green: hsl(122, 39%, 49%);
+  --google-blue: #4285F4;
+  --google-red: #DB4437;
+  --google-yellow: #F4B400;
+  --google-green: #0F9D58;
   --google-gray-50: hsl(0, 0%, 98%);
   --google-gray-100: hsl(0, 0%, 96%);
   --google-gray-200: hsl(0, 0%, 93%);
@@ -64,10 +64,10 @@
   --radius: 0.5rem;
   
   /* Google Material Design Colors - Dark Mode */
-  --google-blue: hsl(207, 90%, 72%);
-  --google-red: hsl(4, 90%, 68%);
-  --google-yellow: hsl(45, 100%, 61%);
-  --google-green: hsl(122, 39%, 59%);
+  --google-blue: #90CAF9;
+  --google-red: #EF9A9A;
+  --google-yellow: #FFF59D;
+  --google-green: #A5D6A7;
   --google-gray-50: hsl(210, 11%, 15%);
   --google-gray-100: hsl(210, 9%, 20%);
   --google-gray-200: hsl(210, 9%, 25%);
