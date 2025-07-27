@@ -14,12 +14,10 @@ export default function Certifications() {
   const certifications = [
     // Microsoft
     { title: "Introduction to Computers and Operating Systems and Security", provider: "Microsoft", icon: Cpu, url: "/certificates/microsoft_certificate_1.pdf" },
-    { title: "Microsoft Cybersecurity Certificate", provider: "Microsoft", icon: Shield },
     { title: "Cybersecurity Identity and Access Solutions using Azure AD", provider: "Microsoft", icon: Lock, url: "/certificates/microsoft_certificate_4.pdf" },
     { title: "Cybersecurity Solutions and Microsoft Defender", provider: "Microsoft", icon: Shield, url: "/certificates/microsoft_certificate_5.pdf" },
     { title: "Cybersecurity Threat Vectors and Mitigation", provider: "Microsoft", icon: Server, url: "/certificates/microsoft_certificate_3.pdf" },
     { title: "Cybersecurity Tools and Technologies", provider: "Microsoft", icon: Cpu, url: "/certificates/microsoft_certificate_6.pdf" },
-    { title: "Microsoft Cybersecurity Professional Certification 1", provider: "Microsoft", icon: BookText },
     { title: "Introduction to Networking and Cloud Computing", provider: "Microsoft", icon: Globe, url: "/certificates/microsoft_certificate_2.pdf" },
 
     // Google
