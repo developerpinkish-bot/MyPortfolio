@@ -4,13 +4,13 @@ export default function TechnicalSkills() {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["C++", "Python"],
+      skills: ["C++", "Python", "SQL","TypeScript","NodeJS","Tailwind CSS", "React","Markdown"],
       color: "google-blue",
       bgColor: "bg-google-blue"
     },
     {
       title: "Platforms & Tools", 
-      skills: ["Linux", "GitHub", "Jupyter", "Wireshark"],
+      skills: ["Kali Linux", "GitHub Codespace", "Anaconda", "Wireshark", "Azure","Docker"],
       color: "google-green",
       bgColor: "bg-google-green"
     }
