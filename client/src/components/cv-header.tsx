@@ -2,7 +2,7 @@ import { Mail, MapPin, Github, Linkedin } from "lucide-react";
 
 export default function CVHeader() {
   return (
-    <header className="bg-gradient-to-r from-google-blue to-blue-600 text-white py-12 px-8 relative overflow-hidden">
+    <header className="bg-gradient-to-r from-google-blue to-blue-600 text-black py-12 px-8 relative overflow-hidden">
       <div className="absolute inset-0 bg-black opacity-5"></div>
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center lg:text-left">
