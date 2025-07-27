@@ -18,7 +18,7 @@ export default function WorkExperience() {
       title: "Cybersecurity Intern",
       company: "CodeAlpha",
       period: "Present",
-      color: "google-red",
+      color: "google-blue", // changed from "google-red" to blue
       icon: Shield,
       achievements: [
         "Performed vulnerability assessments and basic penetration testing",
@@ -28,18 +28,36 @@ export default function WorkExperience() {
     }
   ];
 
+  // Mapping Tailwind classes
+  const colorClasses = {
+    "google-green": {
+      bg: "bg-google-green",
+      text: "text-google-green"
+    },
+    "google-red": {
+      bg: "bg-google-red",
+      text: "text-google-red"
+    },
+    "google-blue": {
+      bg: "bg-google-blue",
+      text: "text-google-blue"
+    }
+  };
+
   return (
     <section className="print-break">
       <h2 className="text-3xl font-semibold text-google-gray-900 dark:text-google-gray-800 mb-8 flex items-center gap-3">
         <Briefcase className="h-8 w-8 text-google-green dark:text-google-green" />
         Work Experience
       </h2>
-      
+
       <div className="space-y-6">
         {experiences.map((experience, index) => (
-          <div 
+          <div
             key={index}
-            className={`bg-white dark:bg-google-gray-100 rounded-xl shadow-material p-6 border-l-4 border-${experience.color} hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1`}
+            className={`bg-white dark:bg-google-gray-100 rounded-xl shadow-material p-6 border-l-4 ${
+              colorClasses[experience.color]?.border || `border-${experience.color}`
+            } hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1`}
           >
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
               <div>
@@ -50,14 +68,18 @@ export default function WorkExperience() {
                   {experience.company}
                 </p>
               </div>
-              <span className={`bg-${experience.color} text-white px-3 py-1 rounded-full text-sm font-medium mt-2 sm:mt-0 self-start`}>
+              <span
+                className={`${colorClasses[experience.color]?.bg} text-white px-3 py-1 rounded-full text-sm font-medium mt-2 sm:mt-0 self-start`}
+              >
                 {experience.period}
               </span>
             </div>
             <ul className="space-y-2 text-google-gray-700 dark:text-google-gray-600">
               {experience.achievements.map((achievement, achievementIndex) => (
                 <li key={achievementIndex} className="flex items-start gap-3">
-                  <experience.icon className={`h-4 w-4 text-${experience.color} mt-1 flex-shrink-0`} />
+                  <experience.icon
+                    className={`h-4 w-4 ${colorClasses[experience.color]?.text} mt-1 flex-shrink-0`}
+                  />
                   <span>{achievement}</span>
                 </li>
               ))}

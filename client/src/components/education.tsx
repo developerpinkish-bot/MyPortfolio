@@ -2,11 +2,14 @@ import { GraduationCap } from "lucide-react";
 
 export default function Education() {
   const courses = [
-    "AI",
+    "Artificial Intelligence",
     "Machine Learning", 
     "Cybersecurity",
     "Data Structures",
-    "Operating Systems"
+    "Object Oriented Programming",
+    "Operating Systems",
+    "SQL",
+    "Programming Fundamentals",
   ];
 
   return (
