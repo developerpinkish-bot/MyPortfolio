@@ -15,11 +15,11 @@ export default function Education() {
   return (
     <section className="print-break">
       <h2 className="text-3xl font-semibold text-google-gray-900 dark:text-google-gray-800 mb-8 flex items-center gap-3">
-        <GraduationCap className="h-8 w-8 text-google-yellow dark:text-google-yellow" />
+        <GraduationCap className="h-8 w-8 text-[#F9AB00]" />
         Education
       </h2>
       
-      <div className="bg-white dark:bg-google-gray-100 rounded-xl shadow-material p-6 border-l-4 border-google-yellow hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1">
+      <div className="bg-white dark:bg-[#202124] rounded-xl shadow-material p-6 border-l-4 border-[#F9AB00] hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
           <div>
             <h3 className="text-xl font-semibold text-google-gray-900 dark:text-google-gray-800">
@@ -29,7 +29,10 @@ export default function Education() {
               The University of Faisalabad
             </p>
           </div>
-          <span className="bg-google-yellow px-3 py-1 rounded-full text-sm font-medium mt-2 sm:mt-0 self-start" style={{ color: '#121212' }}>
+          <span
+            className="bg-[#F9AB00] px-3 py-1 rounded-full text-sm font-semibold mt-2 sm:mt-0 self-start"
+            style={{ color: "#202124" }}
+          >
             2023 – 2027
           </span>
         </div>

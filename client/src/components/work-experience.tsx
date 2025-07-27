@@ -1,6 +1,18 @@
+import { useEffect, useState } from "react";
 import { Briefcase, CheckCircle, Shield, Brain } from "lucide-react";
 
 export default function WorkExperience() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Only runs on client
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    setIsDarkMode(mediaQuery.matches);
+    const handleChange = (e: MediaQueryListEvent) => setIsDarkMode(e.matches);
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
   const experiences = [
     {
       title: "Machine Learning Intern",
@@ -12,8 +24,8 @@ export default function WorkExperience() {
       achievements: [
         "Implemented supervised learning models using Scikit-learn and Pandas",
         "Worked on real-world datasets for regression and classification tasks",
-        "Gained experience in model evaluation, feature engineering, and optimization"
-      ]
+        "Gained experience in model evaluation, feature engineering, and optimization",
+      ],
     },
     {
       title: "Natural Language Processing Intern",
@@ -25,8 +37,8 @@ export default function WorkExperience() {
       achievements: [
         "Built and fine-tuned NLP models for real-world text classification tasks",
         "Preprocessed large text corpora using NLTK and spaCy",
-        "Collaborated with senior data scientists for model optimization and evaluation"
-      ]
+        "Collaborated with senior data scientists for model optimization and evaluation",
+      ],
     },
     {
       title: "Cybersecurity Intern",
@@ -38,71 +50,93 @@ export default function WorkExperience() {
       achievements: [
         "Performed vulnerability assessments and basic penetration testing",
         "Worked with Linux-based security tools and simulated attack environments",
-        "Gained experience in firewall configuration, intrusion detection, and ethical hacking best practices"
-      ]
-    }
+        "Gained experience in firewall configuration, intrusion detection, and ethical hacking best practices",
+      ],
+    },
   ];
+
+  const badgeColors = {
+    "google-green": {
+      lightBg: "#E6F4EA",
+      darkBg: "#34A853",
+    },
+    "google-red": {
+      lightBg: "#FCE8E6",
+      darkBg: "#EA4335",
+    },
+    "google-blue": {
+      lightBg: "#E8F0FE",
+      darkBg: "#4285F4",
+    },
+  };
 
   const colorClasses = {
     "google-green": {
-      bg: "bg-google-green",
+      border: "border-google-green",
       text: "text-google-green",
-      border: "border-google-green"
     },
     "google-red": {
-      bg: "bg-google-red",
+      border: "border-google-red",
       text: "text-google-red",
-      border: "border-google-red"
     },
     "google-blue": {
-      bg: "bg-google-blue",
+      border: "border-google-blue",
       text: "text-google-blue",
-      border: "border-google-blue"
-    }
+    },
   };
 
   return (
     <section className="print-break">
       <h2 className="text-3xl font-semibold text-google-gray-900 dark:text-google-gray-800 mb-8 flex items-center gap-3">
-        <Briefcase className="h-8 w-8 text-google-green dark:text-google-green" />
+        <Briefcase className="h-8 w-8 text-[#34A853]" />
         Work Experience
       </h2>
 
       <div className="space-y-6">
-        {experiences.map((experience, index) => (
-          <div
-            key={index}
-            className={`bg-white dark:bg-google-gray-100 rounded-xl shadow-material p-6 border-l-4 ${
-              colorClasses[experience.color]?.border
-            } hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1`}
-          >
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
-              <div>
-                <h3 className="text-xl font-semibold text-google-gray-900 dark:text-google-gray-800">
-                  {experience.title}
-                </h3>
-                <p className={`${experience.companyColor} font-medium`}>
-                  {experience.company}
-                </p>
+        {experiences.map((experience, index) => {
+          const badgeColor = badgeColors[experience.color];
+          return (
+            <div
+              key={index}
+              className={`bg-white dark:bg-[#202124] rounded-xl shadow-material p-6 border-l-4 ${colorClasses[experience.color].border} hover:shadow-material-hover transition-all duration-200 hover:-translate-y-1`}
+            >
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold text-google-gray-900 dark:text-google-gray-800">
+                    {experience.title}
+                  </h3>
+                  <p className={`${experience.companyColor} font-medium`}>
+                    {experience.company}
+                  </p>
+                </div>
+
+                {/* Present Badge with dark mode fixed */}
+                <span
+                  className={`px-3 py-1 rounded-full text-sm font-semibold mt-2 sm:mt-0 self-start transition-colors`}
+                  style={{
+                    backgroundColor: isDarkMode
+                      ? badgeColor.darkBg
+                      : badgeColor.lightBg,
+                    color: isDarkMode ? "#fff" : "#202124",
+                  }}
+                >
+                  {experience.period}
+                </span>
               </div>
-              <span
-                className={`${colorClasses[experience.color]?.bg} text-white px-3 py-1 rounded-full text-sm font-medium mt-2 sm:mt-0 self-start`}
-              >
-                {experience.period}
-              </span>
+
+              <ul className="space-y-2 text-google-gray-800 dark:text-google-gray-400">
+                {experience.achievements.map((achievement, achievementIndex) => (
+                  <li key={achievementIndex} className="flex items-start gap-3">
+                    <experience.icon
+                      className={`h-4 w-4 ${colorClasses[experience.color].text} mt-1 flex-shrink-0`}
+                    />
+                    <span>{achievement}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul className="space-y-2 text-google-gray-700 dark:text-google-gray-600">
-              {experience.achievements.map((achievement, achievementIndex) => (
-                <li key={achievementIndex} className="flex items-start gap-3">
-                  <experience.icon
-                    className={`h-4 w-4 ${colorClasses[experience.color]?.text} mt-1 flex-shrink-0`}
-                  />
-                  <span>{achievement}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
