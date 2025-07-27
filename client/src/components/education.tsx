@@ -29,7 +29,7 @@ export default function Education() {
               The University of Faisalabad
             </p>
           </div>
-          <span className="bg-google-yellow text-google-gray-900 dark:text-google-gray-900 px-3 py-1 rounded-full text-sm font-medium mt-2 sm:mt-0 self-start">
+          <span className="bg-google-yellow px-3 py-1 rounded-full text-sm font-medium mt-2 sm:mt-0 self-start" style={{ color: '#121212' }}>
             2023 – 2027
           </span>
         </div>
