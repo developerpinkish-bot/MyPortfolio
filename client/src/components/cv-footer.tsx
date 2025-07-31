@@ -4,8 +4,8 @@ export default function CVFooter() {
   return (
     <footer className="bg-google-gray-900 dark:bg-google-gray-200 text-white dark:text-google-gray-800 py-8 px-8 mt-16 transition-colors duration-200">
       <div className="max-w-6xl mx-auto text-center">
-        <p className="text-lg font-light italic mb-4">
-          "Securing the future through AI and ethics."
+        <p className="text-lg font-light italic mb-2">
+          "Cybersecurity is not just a shield; with AI, it becomes a sword."
         </p>
         <div className="flex justify-center gap-6">
           <a 

@@ -124,7 +124,7 @@ export default function WorkExperience() {
                 </span>
               </div>
 
-              <ul className="space-y-2 text-google-gray-800 dark:text-google-gray-400">
+              <ul className="space-y-2 text-google-gray-800" style={{ color: isDarkMode ? '#959696' : undefined }}>
                 {experience.achievements.map((achievement, achievementIndex) => (
                   <li key={achievementIndex} className="flex items-start gap-3">
                     <experience.icon
